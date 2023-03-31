@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serife;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+.fotos-geral {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container-fotos {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+}
+
+.fotos-1 {
+    background-image: url('https://tribunapr.uol.com.br/wp-content/uploads/sites/56/2022/02/28121730/batman-2022-tudo-o-que-precisa-saber-antes-de-ver-o-filme.jpg');
+}
+
+.fotos-2 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg?w=1200&h=675&crop=1');
+}
+
+.fotos-3 {
+    background-image: url('https://cinemacao.com/wp-content/uploads/2022/03/batman-2-1130x590.jpg');
+}
+
+.fotos-4 {
+    background-image: url('https://i0.wp.com/minhavisaodocinema.com.br/wp-content/uploads/2022/03/batman-mvdc-2.jpg?resize=467%2C589&ssl=1');
+}
+
+.fotos-5 {
+    background-image: url('https://midias.correiobraziliense.com.br/_midias/jpg/2022/01/20/26157815-7354644.jpg');
+}
+
+.fotos-6 {
+    background-image: url('https://www.einerd.com.br/wp-content/uploads/2022/03/the-batman-posteres-1.jpg');
+}
+
+@media(max-width: 768px){
+    .container-fotos {
+        grid-template-columns: 1fr;
+    }
+} 
